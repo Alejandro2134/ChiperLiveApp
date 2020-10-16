@@ -1,0 +1,30 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
+
+import 'react-native-gesture-handler';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
+import LiveStreamsList from './src/components/LiveStreamsList';
+import Video from './src/components/Video';
+
+const App: () => React$Node = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ gestureDirection: 'horizontal' }} initialRouteName='Home' headerMode='none'>
+        <Stack.Screen name='Home' component={LiveStreamsList} />
+        <Stack.Screen name='Video' component={Video} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
