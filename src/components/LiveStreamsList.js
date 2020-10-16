@@ -60,7 +60,7 @@ const LiveStreamsList = ({ navigation }) => {
                 : <FlatList
                     data={data}
                     renderItem={({ item }) => (
-                      <VideoImg navigation={navigation} videoUrl={item.url} name={item.id} autor={item.autor}/>
+                      <VideoImg navigation={navigation} videoUrl={item.url} name={item.id} />
                     )}
                     keyExtractor={item => item.id}
                     refreshControl={

@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
 import ChiperLogo from '../img/chiper-logo.svg';
 
-const VideoImg = ({ navigation, videoUrl, name, autor, }) => {
+const VideoImg = ({ navigation, videoUrl, name }) => {
     const onPress = () => {
         navigation.navigate('Video', { videoUrl: videoUrl, name: name });
     }
@@ -16,10 +16,6 @@ const VideoImg = ({ navigation, videoUrl, name, autor, }) => {
                 </View>
                 <View style={styles.liveIcon}>
                     <Text style={styles.text}>LIVE</Text>
-                </View>
-
-                <View>
-                    <Text>{autor}</Text>
                 </View>
             </View>
         </TouchableHighlight>
