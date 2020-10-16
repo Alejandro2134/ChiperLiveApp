@@ -8,9 +8,13 @@ Mobile app that have access to the different live streamings related to the Chip
 
 # Preview
 
-## Live events list
+## Live event list
+
+![LiveEventList](/public/liveeventlist.jpg)
 
 ## Live event
+
+![LiveEvent](/public/liveevent.jpg)
 
 # Run Scripts
 
